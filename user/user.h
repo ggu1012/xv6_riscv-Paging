@@ -23,6 +23,9 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+void* phyaddr(void*);
+int ptidx(void*, int);
+int pgcnt(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

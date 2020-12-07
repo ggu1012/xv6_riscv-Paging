@@ -95,3 +95,26 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+// Return the physical address of a virtual address.
+uint64
+sys_phyaddr(void)
+{
+  return 0;
+}
+
+// Return the page table (or directory) index of a virtual address
+// at the specified page table level.
+uint64
+sys_ptidx(void)
+{
+  return 0;
+}
+
+// Count the total number pages allocated by a process.
+uint64
+sys_pgcnt(void)
+{
+  return 0;
+}
+
