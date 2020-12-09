@@ -147,8 +147,7 @@ sys_pgcnt(void)
         pagetable_t pagetable = myproc()->pagetable;
         pte_t* L2_pte = &pagetable[L2]; // This line is inside the for-loop since it's overwritten in lower level.
         // If found, go L1 level and walk the page.
-        if(*L2_pte & PTE_V)
-        {
+        if (*L2_pte & PTE_V) {
             count++;  // allocated page found!
             // Walk L1 page table and find the valid PTE
             for (int L1 = 0; L1 < 512; L1++) {
