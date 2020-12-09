@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
     ptinfo("array", array);
     ptinfo("&lvar", &lvar);
     ptinfo("&array", &array);
-    ptinfo("&gvar", &gvar);
+    ptinfo("&gvar", &gvar);    
     ptinfo("&main", &main);
 
     // Tell how many pages this program uses.
